@@ -42,6 +42,9 @@
                 <div class="col-12 col-sm align-self-center">
                     <img src="img/logo.png" class="img-fluid">
                 </div>
+                <div class="col-6 col-sm align-self-center">
+                    <a href="#form1" class="btn btn-block btn-sm btn-warning" id="reserveButton" style="padding: 10px 5px 10px 5px; font-size:larger" >Reserve Table</a>
+                </div>
             </div>
         </div>
     </header>
@@ -66,14 +69,25 @@
             </div>
         </div>
 
-
+        
         <div class="row row-content align-items-center">
-            <div class="col-12 col-sm-4 col-md-3">
+            <div class="col-xs-12 col-sm-3">
+                <p style="padding:20px;"></p>
                 <h3>This Month's Promotions</h3>
             </div>
-            <div class="col col-sm col-md">
-                <h2>Weekend Grand Buffet</h2>
-                <p>Featuring mouthwatering combinations with a choice of five different salads, six enticing appetizers, six main entrees and five choicest desserts. Free flowing bubbly and soft drinks. All for just $19.99 per person </p>
+            <div class="col-xs-12 col-sm-9">
+                <div class="media">
+                    <div class="media-body">
+                        <h2 class="media-heading">Weekend Grand Buffet <span class="badge badge-danger">New</span></h2>
+                        <p class="d-none d-sm-block">Featuring mouthwatering combinations with a choice of five different salads, 
+                            six enticing appetizers, six main entrees and five choicest desserts.
+                            Free flowing bubbly and soft drinks. All for just $19.99 per person </p>
+                        
+                    </div>
+                    <a class="media-right" href="#">
+                        <img class="media-object img-thumbnail" src="img/buffet.png" alt="Buffet">
+                    </a>
+                </div>
             </div>
         </div>
 
@@ -97,7 +111,66 @@
                 </div>
             </div>
         </div>
+    
+      <div id="form1"  class="row row-content">
+        <div class="col-xs-12 col-sm-8 offset-3">
+        <div class=" card " >
+            <div class="card-header text-white bg-warning mb-3">
+               
+                <h3 style="align-items: center;" id="reservation">Reserve a Table</h3>
+            </div>
+            <div class="card-body">
+                
+        
+            
+            
+            <form  class="form-horizontal" role="form" >
+                <div class="form-group row">
+                    <label for="numberofguests" class="col-sm-2 control-label">Number of Guests</label>
+                    <div class="col-sm-10">
+                        <label class="radio-inline"><input type="radio" name="optradio">1</label>
+                        <label class="radio-inline"><input type="radio" name="optradio">2</label>
+                        <label class="radio-inline"><input type="radio" name="optradio">3</label>
+                        <label class="radio-inline"><input type="radio" name="optradio">4</label>
+                        <label class="radio-inline"><input type="radio" name="optradio">5</label>
+                        <label class="radio-inline"><input type="radio" name="optradio">6</label>      
+                    </div>
+                </div>
+                <!--the "has-feedback" indicator allows the glyphicon to be on the right side.-->
+                <!-- This is coupled with "form-control-feedback" in the i class-->
+                <div class="form-group row ">
+                    <label for="dateandtime" class="col-sm-2 control-label">Date and Time</label>
+                    <div class="col-sm-4">    
+                        <i class="glyphicon glyphicon-calendar form-control-feedback"></i>
+                        <input type="text" class="form-control" id="date" name="date" placeholder="Date">       
+                    </div>
+               
+                    <div class="col-sm-4">
+                        <div class="inner-addon right-addon">
+                            <i class="glyphicon glyphicon-time form-control-feedback"></i>
+                            <input type="text" class="form-control" id="time" name="date" placeholder="Time"> 
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="spacing" class="col-sm-2 control-label"></label>
+                    <div class="col-sm-4">
+                    <button type="submit" class="btn btn-primary">Reserve</button>
+                    </div>   
+                </div>
+            
+                
+            </form>
+                  </div>
+            </div>
+        </div>
     </div>
+    </p>
+            
+            
+        
+    
+
 
     <footer class="footer">
         <div class="container">
